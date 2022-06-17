@@ -34,88 +34,72 @@
 
 # Replace RPG starter project with this code when new instructions are live
 
-def showInstructions():
-  #print a main menu and the commands
-  print('''
-Backrooms JAme
-  go [direction]
-  get [item]
-''')
 
   #Monster/Antagonist-
   #Rooms, Areas-Base room(the continued office light noise, carpted, random moist floors
-
-print('---------------------------')
-
-print('You are in the ' + currentRoom)
-
-#print the current inventory
-print('Inventory : ' + str(inventory))
-
-#print an item if there is one
-if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
-    print("---------------------------")
-#hmm, look up 2 ways to switch this up if its gonna be based more off decision versus like a rpg dont think much iventory would be needed
 
 #an inventory
 inventory = []
 
 rooms = {
+#Area locations, add a map?
+
+#Character Health has sanity
+#Too many (2) encounters with monster without correct way to hide/"fight" off monsters = death
 
              'Office' : {
-                  'south' : 'Room2',
-                  'east'  : 'Room1',
-                  'item'  : 'key',
-                  'north' : 'Room3',
-                  'west'  : 'Room4',
-                  'item'  : 'secret get back FIEN spray',
-                  'trap'  : 'broken glass',
+                 'south' : 'Room2',"desc:("You've gone south and entered Room2, "the intense sound of the lights flickering...and flickering....aAAAgggh")
+                  'east'  : 'Room1',"desc:("You've gone east and entered Room 1, "Why does everything look the same?? Yellow, carpeted interior, striped pattern on the walls, even the room entrances are all evenily highted"
+#Key item to advancee to next room
+                  'item'  : 'key',"desc:("You've found a key; "I wonder what it for, it has a funny insignia on it"
+                  'north' : 'Room3',"desc;(You went north and entered room 3, "Now why the hell does this feel like Deja Vu? As you begin to question so much you notice an indented spot on the wall with a strange symbol"
+                  'west'  : 'Room4',"desc:(You went west and entered room 4, all you see is more of the same thing, you begin to think your going MADDDD,....oh hey is that something in the corner?)
+
+#Item needed to save the character from a potential encounter with monster
+                  'item'  : 'secret get back FIEN spray', "desc:"I mean it speaks for itself. Directions say to make sure you aim the right way or you'll spray yourself duhhh."
+                  'trap'  : 'broken glass',"You didnt watch your step and you stepped on some broken glass. Maybe let whatever could be around know your ever move right? Why dont you bang on the wall next?" "You stepped on more broken glass, I guess your not good at the game of picking your feet up""You stepped on more broken glass, too many times and you'll meet a early end""You stepped on glass, you feel light headed lol, told you watch your step. As you begin losing strength, you wonder "Maybe I shouldve watched my step" too late kekw."
                   'item'  : '',
-                  'riddle': '',
+                  'text': 'If you want to become so much more, all you have to do is explore. What awiats you in these halls? Hard to say, depends on which numbe you are by the time you see this. Is this a Helpful hint, or is this someone leading you to the end? Hmmmmmmmmmmmmmmmm....dont think you got many options :)',
                 },
 
             'Corridor' : {
-                  'north' : 'Hall',
-                  'south' : 'Hall2',
-                  'east'  : 'Exit 1',
-                  'west'  : 'Exit 2',
-                  'item'  : 'Mr.Helpalot',
-                  'item'  : 'stank stinky mask',
-                  'item'  : 'smell good spary',
-                  'trap'  : 'shark pit',
-                  'trap'  : 'claymore',
+                  'north' : 'Hall',"desc:"You entered the north Hall, your vision is weakened by thick fog you begin to question your sanity as you think you begin to hear footsteps approaching"
+                  'south' : 'Hall2',"desc:"you entered the south Hall, same as before yet the air has gotten thicker? You smell a foul odor but dare not search for the owner"
+                  'east'  : 'Exit 1',"desc:"you entered the east exit 1, In front you see a big exit with the number 1 on it, "Can you trust it, is it that simple? #leads to hall with left or right way. either leads player to death.
+                  'west'  : 'Exit 2',"desc:"you entered the west Exit 2, In front you see a nig exit with the number 2 on it, "Can you trust this one? How is this one....is this one even different?" #correct exit to leave to next area"
+                  'item'  : 'Mr.Helpalot',"desc:Remains docile if you take mask""Becomes agro if you dont, will ask you a riddle that if answered wrong = players death. Answered right = player earns "stank stinky mask".
+                  'item'  : 'stank stinky mask',"desc:A mask found on a skeleton with an id reading "Mr.Helpalot" (item can disguise player from a monster encounter once"
+                  'item'  : 'smell good spary',"desc:If used by player attracts monster to it = death""It says smell good but that didnt mean use it lol"
+                  'trap'  : 'shark pit',"you fell into a pit of water, well you can assume what comes next...you see 2 big sharks approaching at fast speed...the end is near"
+                  'trap'  : 'claymore',"you tripped a claymore...should learn to watch your step goober"
                 },
             'Factory' : {
-                  'north' : 'Top floor room',
-                  'south' : 'Something something',
-                  'east'  : 'Indoor Forest',
-                  'west'  : 'Outdoor Forest',
-                  'item'  : 'feel good potion',
-                  'item'  : 'Proposteriouly goodlookin cloak',
-                  'trap'  : 'bouncing betty',
+                  'north' : 'Top floor room',"You went north and entered the top floor, you see a way down...do you take it? # taking way out leads to player death
+                  'south' : 'Something something',"You went south and got caught in a spell, "something something...darksiddeee" this repeats over and over in your head, what a fitting end.
+                  'east'  : 'Indoor Forest',"You went east and entered the Indoor Forest""A indoor forrest, maybe you have gone too far maybe not"
+                  'west'  : 'Reverse Forest',"You went west and entered the Reverse Forest""Everything feels upside down, everythign is moving funny...I think im gonna be sick"
+                  'item'  : 'feel good potion',"does nothing but make you feeel good...mentally"
+                  'item'  : 'Proposteriouly goodlookin cloak',"what better to wear than something that can help ya not be noticed...sign me UP COaCH"
+                  'trap'  : 'bouncing betty',"You stepped on a bouncing betty" "If you move...BOOOM ha now why'd you think you were faster than me lol""if player types crouch "you crouch and avoid the explosion...i knew all that COD would pay off.
                   'riddle': '',
                },
             'Indoor Forest' : {
-                  'north' : 'treasure chest??'
-                  'south' : 'monster bakBrekr',
-                  'east'  : 'twisted path',
-                  'west'  : 'portal of nothing',
-                  'item'  : 'red pill??',
+                  'north' : 'treasure chest??'"It reads treasure chest and look it, but can you really trust it?"if player takes treasure chest player killed by monster = mimic"
+                  'south' : 'monster bakBrekr',"Monster with a speciality in fixing your back...free of charge"
+                  'east'  : 'twisted path',"You went south and entered a twisted path...caught in the loop your stuck here forever."
+                  'west'  : 'portal of nothing',"You head west and see a Portal, but where does it go? Only 1 way to find out".#lets the player teleport to area of choice"
+                  'item'  : 'red pill??',"If taken/eaten leads to players death."
 
                },
             'Reverse Forest' : {
-                  'north' : 'River',
-                  'south' : 'Door 1.2',
-                  'east'  : 'Door 1',
-                  'west'  : 'Upstairs path downstairs',
-                  'item'  : 'green pill',
-                  'item' : 'cookie?',
-            }
+                  'north' : 'River',"You go north and see a river, strange yoou dont recall hearing water before. # if entered player is stuck
+                  'south' : 'Door 1.2',"Simple exit for the player to win if player has correct items"
+                  'east'  : 'Door 1',"leads player back to first area"
+                  'west'  : 'Upstairs path downstairs',"Leads players into loop on stairs"
+                  'item'  : 'green pill',"Actually a monster that kills player, very cheeeky"
+                  'item' : 'cookie?',"A cookie for your thoughts..wink wink. Helps players sanity if attacked by monster.
+                           }
          }
-
-#start the player in the Hall
-currentRoom = 'Hall'
 
 
 #You coudl randomize the starting point but you might have to rework the 'areas' because spawing into complete darkness or wate... welll gg
@@ -123,63 +107,13 @@ currentRoom = 'Hall'
 
 showInstructions()
 
-#loop forever
-while True:
-
-  move = ''
-  while move == '':
-    move = input('')
-
-  # Lowercase answer
-  move = move.lower().split(" ", 1)
-
-if room equal
-
-
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
-    else:
-        print('No silly, that way be nothing')
-#Maybe add some light humor, notable references
-  #if they type 'get' first
-  if move[0] == 'get' :
-      else:
-          print('it together player or else ill do it for ya')
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
-    else:
-      #can't get it
-      print('Can\'t get ' + move[1] + '!')
-#See that stuff looks to messy and extra
 
 #thx to code master chad  use this f- string   (print(f"{variableA} and {variableB}")
 #Could win by maybe solving certain riddles/puzzles, or escaping through certain zones, or finding maybe a super secret escape room
-  ## Define how a player can win
 
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
-  break
 
 #NOw this lol add some wording to make the player tense on purpose to make them run out of time
 #maybe have monsters give random phrase u have to mimic bak or elsssssse
-
-  ## If a player enters a room with a monster
-  elif 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
-    break
 
 
 
