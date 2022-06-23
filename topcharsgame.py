@@ -8,11 +8,8 @@ print("Welcome to the top Listings of some of my Favorite Movie Actors")
 #Informs player of decision based inuts needed
 print("Please Chose from the selection of nominees:\n")
 
-<<<<<<< HEAD
 #directory of actors/actress with given movie and year it was introduced
-=======
 
->>>>>>> 0064436ae5628f42bb2a17e1233dd8ca38c722e6
 dict1={"WillSmith": ["iRobot(2004)", "I Am Legend(2007)", "The Pursuti of Happiness(2006)"], 
 "DenzelWashington":["Training Day(2001)", "Inside Man(2006)", "The Equalizer(2014)"], 
 "IdrisElba": ["Takers(2010)", "The Losers(2010)", "Thor Ragnorak(2017)"],
@@ -44,10 +41,22 @@ dict2 ={"iRobot":[7.1,"In 2035, highly intelligent robots fill public service po
 "The Rundown":[6.6, "In an attempt to earn enough money to start his own small business, the dauntless bounty hunter--or retrieval expert--and aspiring restaurateur, Beck, is talked into bringing back home his shady boss' adventure-seeking son, Travis, from the impenetrable Amazon jungle. However, there, in the dusty town of El Dorado, Beck is in for a wild ride, as the local tyrant and powerful mining baron, Cornelius Hatcher, too, is desperately trying to track down Travis: the only person who knows the exact location of a precious golden artefact. Now, the feisty barmaid with the hidden agenda, Mariana, and Hatcher's small army of whip-cracking gun-toting henchmen are after Beck and Travis, hell-bent on finding first the rare statuette. Will they get out of the jungle in one piece?"],
 "Walking Tall":[6.2, "The hard-boiled former U.S. Special Forces veteran and decorated sergeant, Chris Vaughn, is in for a rude awakening, as his peaceful hometown has changed radically. With the old cedar mill gone out of business for good--and a garish gambling house opened instead, promoting drugs and violence thanks to his old high-school nemesis, Jay Hamilton--Chris will have no other choice but to take matters into his own hands as the town's new sheriff. Now, Jay's murderous henchmen have no place to hide--and with a primitive and lethally efficient four-by-four fence post as his weapon of choice--Chris is determined to clean up the vice and the corruption in his beloved birthplace. Who will dare to stop Chris, the furious one-man-army?"],
 "GridIron Gang":[6.9, "In the Kilpatrick juvenile detention center, the supervisor and former football player Sean Porter sees the lack of discipline, self-esteem, union and perspective in the teenage interns and proposes to prepare a football team to play in one league. He is supported by his superiors and his successful experience changes the lives of many young kids."]}
+
+dict3={"WillSmith":["Throughout life people will make you mad, disrespect you and treat you bad. Let God deal with the things they do, cause hate in your heart will consume you too."],
+"Denzel Washington":["If I am a cup maker, I’m interested in making the best cup I possibly can. My effort goes into that cup, not what people think about it."],
+"IdrisElba":["The English are good at bad guys - the James Bond-style villain, cunning, slow-burning. The Americans are much more obvious about it."],
+"MichaelBJordan":["As human beings, why does it take somebody to feel like they're close to us for us to see their humanity? Why can't we see the humanity in people that are distant from us?"],
+"ChadwickBoseman":["When you are deciding on next steps, next jobs, next careers, further education, you should rather find purpose than a job or a career,” he said at the time. “Purpose crosses disciplines. Purpose is an essential element of you. It is the reason you are on the planet at this particular time in history."],
+"KevinHart":["Laughter heals all wounds, that’s one thing that everybody shares. No matter wat you’re going through, it makes you forget about your problems. I think the world should keep laughing."],
+"DwayneJohnson":["The first step to achieving your goal, is to take a moment to respect your goal. Know what it means to you to achieve it."]}
+
+
 #loop to keep player returning to list until ready to quit
 while True: 
     #input to queue player for given actor/actress
     v1 = input("What actor would you like to see?\n")
+    #Call to this dictionary to print inputed Actors Quote
+    print(dict3[v1])
     #the q commando give player option to quit easily anytime during loop by pressing q
     if v1 == 'q':
         break
