@@ -9,7 +9,10 @@ print("Welcome to the top Listings of some of my Favorite Movie Actors")
 print("Please Chose from the selection of nominees:\n")
 
 #directory of actors/actress with given movie and year it was introduced
+<<<<<<< HEAD
 
+=======
+>>>>>>> a56c1349bafbad4e10099ed0d6a972120b7d630a
 dict1={"WillSmith": ["iRobot(2004)", "I Am Legend(2007)", "The Pursuti of Happiness(2006)"], 
 "DenzelWashington":["Training Day(2001)", "Inside Man(2006)", "The Equalizer(2014)"], 
 "IdrisElba": ["Takers(2010)", "The Losers(2010)", "Thor Ragnorak(2017)"],
