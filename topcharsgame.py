@@ -8,11 +8,7 @@ print("Welcome to the top Listings of some of my Favorite Movie Actors")
 #Informs player of decision based inuts needed
 print("Please Chose from the selection of nominees:\n")
 
-<<<<<<< HEAD
 #directory of actors/actress with given movie and year it was introduced
-=======
-
->>>>>>> 0064436ae5628f42bb2a17e1233dd8ca38c722e6
 dict1={"WillSmith": ["iRobot(2004)", "I Am Legend(2007)", "The Pursuti of Happiness(2006)"], 
 "DenzelWashington":["Training Day(2001)", "Inside Man(2006)", "The Equalizer(2014)"], 
 "IdrisElba": ["Takers(2010)", "The Losers(2010)", "Thor Ragnorak(2017)"],
