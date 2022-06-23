@@ -9,10 +9,7 @@ print("Welcome to the top Listings of some of my Favorite Movie Actors")
 print("Please Chose from the selection of nominees:\n")
 
 #directory of actors/actress with given movie and year it was introduced
-<<<<<<< HEAD
 
-=======
->>>>>>> a56c1349bafbad4e10099ed0d6a972120b7d630a
 dict1={"WillSmith": ["iRobot(2004)", "I Am Legend(2007)", "The Pursuti of Happiness(2006)"], 
 "DenzelWashington":["Training Day(2001)", "Inside Man(2006)", "The Equalizer(2014)"], 
 "IdrisElba": ["Takers(2010)", "The Losers(2010)", "Thor Ragnorak(2017)"],
@@ -45,6 +42,7 @@ dict2 ={"iRobot":[7.1,"In 2035, highly intelligent robots fill public service po
 "Walking Tall":[6.2, "The hard-boiled former U.S. Special Forces veteran and decorated sergeant, Chris Vaughn, is in for a rude awakening, as his peaceful hometown has changed radically. With the old cedar mill gone out of business for good--and a garish gambling house opened instead, promoting drugs and violence thanks to his old high-school nemesis, Jay Hamilton--Chris will have no other choice but to take matters into his own hands as the town's new sheriff. Now, Jay's murderous henchmen have no place to hide--and with a primitive and lethally efficient four-by-four fence post as his weapon of choice--Chris is determined to clean up the vice and the corruption in his beloved birthplace. Who will dare to stop Chris, the furious one-man-army?"],
 "GridIron Gang":[6.9, "In the Kilpatrick juvenile detention center, the supervisor and former football player Sean Porter sees the lack of discipline, self-esteem, union and perspective in the teenage interns and proposes to prepare a football team to play in one league. He is supported by his superiors and his successful experience changes the lives of many young kids."]}
 
+#Directory of Given actors with specified quote
 dict3={"WillSmith":["Throughout life people will make you mad, disrespect you and treat you bad. Let God deal with the things they do, cause hate in your heart will consume you too."],
 "Denzel Washington":["If I am a cup maker, I’m interested in making the best cup I possibly can. My effort goes into that cup, not what people think about it."],
 "IdrisElba":["The English are good at bad guys - the James Bond-style villain, cunning, slow-burning. The Americans are much more obvious about it."],
