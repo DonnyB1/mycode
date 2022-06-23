@@ -6,7 +6,7 @@ def showInstructions():
     
     """Show the game instructions when called"""
     #print a main menu and the commands
-    print1by1('''
+    print'''
     The BACkBACK BACK BACKK ROOms
    
     ========
@@ -43,7 +43,7 @@ rooms = {
                   'North' : ["You went north and entered room 3, Now why the hell does this feel like Deja Vu? As you begin to question so much you notice an indented spot on the wall with a strange symbol"],
                   'South' : ["You've gone south and entered Room2, the intense sound of the lights flickering...and flickering....aAAAgggh",
                   'East'  : ["You went east and entered Room 1, Why does everything look the same? Yellow carpeted interior, striped pattern on the walls, even the room entrances are all evenily highted"],
-                  'West'  : ["You went west and entered room 4, all you see is more of the same thing, you begin to think your going MADDDD,....oh hey is that something in the corner?]
+                  'West'  : ["You went west and entered room 4, all you see is more of the same thing, you begin to think your going MADDDD,....oh hey is that something in the corner?"]
                   'Item'  : ["A Key with a Stramge symbol on it"]        
                 },
 
@@ -121,7 +121,7 @@ while True:
         #there is no door (link) to the new room #curtesy of Tyler
         else:
             print('You can\'t go that way!')
-
+currentroom="Office"
     #if they type 'get' first
     if move[0] == 'get' :
         #if the room contains an item, and the item is the one they want to get
