@@ -58,6 +58,8 @@ while True:
     v1 = input("What actor would you like to see?\n")
     #Call to this dictionary to print inputed Actors Quote
     print(dict3[v1])
+    if v1 == "ChadwickBoseman":
+        print(["Rest in paradise"])
     #the q commando give player option to quit easily anytime during loop by pressing q
     if v1 == 'q':
         break
