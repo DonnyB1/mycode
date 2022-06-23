@@ -27,7 +27,16 @@
 #dont forget to add comments, forgot last time kekw
 
 
-
+    #'Office' = {'south' : 'Room2',
+                  ("You've gone south and entered Room2, the intense sound of the lights flickering...and flickering....aAAAgggh"),
+                                            'East' : ['Room1'],
+                                                                  ("You've gone east and entered Room 1, Why does everything look the same?? Yellow, carpeted interior, striped pattern on the walls, even the room entrances are all evenily highted"),
+                                                                                        'Item'  : ['key',] 
+                                                                                                              ("You've found a key I wonder what it's used on? It has a funny insignia on it"),
+                                                                                                                                    'north' : ['Room3'],
+                                                                                                                                                          ("You went north and entered room 3, Now why the hell does this feel like Deja Vu? As you begin to question so much you notice an indented spot on the wall with a strange symbol"),
+                                                                                                                                                                                'west'  : ['Room4'],
+                                                                                                                                                                                                      ("You went west and entered room 4, all you see is more of the same thing, you begin to think your going MADDDD,....oh hey is that something in the corner?")}
 
 #!/usr/bin/python3
 #REMEMBER TO CD AND SAVE TO THE CORRECT DIRECTROY, STOP PRESSING RANDOM BUTTONS AGAIN WE CANT AFFORD TO KEEP LOSING THIS DATA AND STARTING OVER!!!!!
@@ -41,6 +50,9 @@
 #an inventory
 inventory = []
 
+
+#my name is {rooms[office['south']
+
 rooms = {
 #Area locations, add a map?
 
@@ -48,8 +60,8 @@ rooms = {
 #Too many (2) encounters with monster without correct way to hide/"fight" off monsters = death
 
              'Office' : {
-                 'south' : 'Room2',"desc:("You've gone south and entered Room2, "the intense sound of the lights flickering...and flickering....aAAAgggh")
-                  'east'  : 'Room1',"desc:("You've gone east and entered Room 1, "Why does everything look the same?? Yellow, carpeted interior, striped pattern on the walls, even the room entrances are all evenily highted"
+                 'south' : 'Room2',desc ("You've gone south and entered Room2, "the intense sound of the lights flickering...and flickering....aAAAgggh")
+                  'east' : 'Room1', desc ("You've gone east and entered Room 1, "Why does everything look the same?? Yellow, carpeted interior, striped pattern on the walls, even the room entrances are all evenily highted")
 #Key item to advancee to next room
                   'item'  : 'key',"desc:("You've found a key; "I wonder what it for, it has a funny insignia on it"
                   'north' : 'Room3',"desc;(You went north and entered room 3, "Now why the hell does this feel like Deja Vu? As you begin to question so much you notice an indented spot on the wall with a strange symbol"
